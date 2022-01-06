@@ -1,0 +1,58 @@
+{
+  "name": "ts_msg_queue",
+  "version": "1.0.0",
+  "description": "A project to learn about message queues",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -e ts --exec ts-node --project tsconfig.json --files src/index.ts",
+    "build": "rimraf -rf ./dist && rimraf -rf ./types  && tsc",
+    "test": "ts-node --project tsconfig.json --files  ./src/libs/excel.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wanghanxiang/ts_msg_queue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wanghanxiang/ts_msg_queue/issues"
+  },
+  "homepage": "https://github.com/wanghanxiang/nodejs_tool#readme",
+  "devDependencies": {
+    "@types/amqplib": "^0.8.2",
+    "@types/ioredis": "^4.26.4",
+    "@types/koa": "^2.13.3",
+    "@types/koa-router": "^7.4.2",
+    "@types/koa__cors": "^3.0.2",
+    "@types/node": "^15.12.4",
+    "@types/node-rsa": "^1.1.0",
+    "@types/node-xlsx": "^0.15.2",
+    "@types/redlock": "^4.0.1",
+    "@types/request-promise": "^4.1.47",
+    "ioredis": "^4.27.6",
+    "nodemon": "^2.0.13",
+    "redlock": "^4.2.0",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.3.4"
+  },
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "@koa/router": "^10.0.0",
+    "@types/koa__router": "^8.0.4",
+    "amqplib": "^0.8.0",
+    "axios": "^0.21.1",
+    "bufferhelper": "^0.2.1",
+    "iconv-lite": "^0.6.3",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-ratelimit": "^5.0.0",
+    "koa-router": "^10.0.0",
+    "moment": "^2.29.1",
+    "node-rsa": "^1.1.1",
+    "node-xlsx": "^0.17.1",
+    "reflect-metadata": "^0.1.13",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  }
+}
